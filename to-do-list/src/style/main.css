@@ -1,0 +1,105 @@
+.todo-list{
+    margin: 100px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.todo-list h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.todo-list .submit-btn{
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #0097A7;
+}
+
+.todo-list .submit-btn:hover{
+    cursor: pointer;
+    border: 2px solid #0097A7;
+    color: #0097A7;
+    background-color: transparent;
+    box-shadow: 0 0 5px #0097A7;
+}
+
+.todo-list input{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 97%;
+    border: 1px solid #8E8E8E;
+}
+
+.todo-list input::placeholder{
+    font-size: 20px;
+    color: #797979;
+}
+
+ul{
+    gap: 23px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #8E8E8E;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.item__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__checked-btn, .item__delete-btn{
+    padding: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+ul .item .item__checked-btn{
+    color: #1ED700;
+    border: 1px solid #1ED700;
+    margin-right: 12px;
+}
+
+ul .item .item__checked-btn:hover{
+    cursor: pointer;
+    color: #0E6500;
+    border: 1px solid #0E6500;
+    box-shadow: 0 0 5px #0E6500;
+}
+
+ul .item .item__delete-btn{
+    color: #F40000;
+    border: 1px solid #F40000;
+}
+
+ul .item .item__delete-btn:hover{
+    cursor: pointer;
+    color: #9B0000;
+    border: 1px solid #9B0000;
+    box-shadow: 0 0 5px #9B0000;
+}
+
+.checked{
+    text-decoration: line-through;
+}
